@@ -1,0 +1,1 @@
+EventPlanner Solution code from Gateway Test 2 is starting point for Gateway Test3
