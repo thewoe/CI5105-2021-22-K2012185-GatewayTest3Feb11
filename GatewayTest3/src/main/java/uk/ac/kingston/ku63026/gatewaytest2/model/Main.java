@@ -15,7 +15,7 @@ public class Main{
         ep.readEvents("Events.csv");
         System.out.println(ep.printEvents());
         
-        System.out.println("Total Tickets Sold: " + ep.totalTicketsSold());
+        //System.out.println("Total Tickets Sold: " + ep.totalTicketsSold());
         
         // Make a commit and push to your GatewayTest3Feb11 repository using the commit message
         // GT3Start: Start point for Gateway Test - start line uncommented
