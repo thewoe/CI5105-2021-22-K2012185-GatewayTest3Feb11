@@ -21,7 +21,12 @@ public class EventViewerController implements ActionListener {
             case "DeleteEvent":
                 System.out.println("Delete Selected button clicked");
                 System.out.println(ae.getActionCommand());
-                System.out.println(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText());
+                if (ev.getTextAreaPanel().getTextAreaPanel().getSelectedText() == null) {
+                    System.out.println("None Selected");
+                }
+                else {
+                    System.out.println(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText());
+                }
                 break;
         }
     }
