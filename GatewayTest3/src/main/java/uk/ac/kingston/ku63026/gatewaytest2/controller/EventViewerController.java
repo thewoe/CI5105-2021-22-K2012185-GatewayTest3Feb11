@@ -30,6 +30,7 @@ public class EventViewerController implements ActionListener {
                 else {
                     System.out.println(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText());
                     em.getTheEvent(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText());
+                    em.deleteEvent(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText());
                     //System.out.println(em.getEvents().get(em.getSelectedEvent(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText())));
                 }
    
