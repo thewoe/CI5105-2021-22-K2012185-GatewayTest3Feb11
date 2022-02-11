@@ -149,7 +149,7 @@ public int totalTicketsSold(){
         String searchableText = selectedText.trim();
         int index = 0;
         System.out.println(this.events.size());
-        for (int i=0; i<this.getEvents().size(); i++) {
+        for (int i=0; i<this.events.size(); i++) {
             if (searchableText.equals(this.events.get(i).getName())) {
                index = i;
                break;
