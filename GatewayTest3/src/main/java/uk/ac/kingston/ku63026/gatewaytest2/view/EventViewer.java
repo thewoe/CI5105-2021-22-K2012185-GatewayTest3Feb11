@@ -34,7 +34,7 @@ public class EventViewer extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setBounds(400,0,575,425);
         this.setLayout(new BorderLayout());
-        deleteSelected.setActionCommand("deleteSelected");
+        deleteSelected.setActionCommand("DeleteEvent");
         deleteSelected.addActionListener(eventViewerController);
         this.add(textAreaPanel, BorderLayout.CENTER);
         this.add(deleteSelected, BorderLayout.SOUTH);

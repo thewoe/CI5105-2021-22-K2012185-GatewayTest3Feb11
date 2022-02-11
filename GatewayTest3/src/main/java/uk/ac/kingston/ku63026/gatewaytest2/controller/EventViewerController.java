@@ -16,8 +16,9 @@ public class EventViewerController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
         switch (ae.getActionCommand()) {
-            case "deleteSelected":
+            case "DeleteEvent":
                 System.out.println("Delete Selected button clicked");
+                System.out.println(ae.getActionCommand());
                 break;
         }
     }
