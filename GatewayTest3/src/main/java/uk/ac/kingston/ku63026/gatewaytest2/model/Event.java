@@ -125,6 +125,6 @@ public class Event{
      * @return A String with a csv view of the Event
      */
     public String printEvent(){
-         return this.getName() + "," + this.getCapacity() + "," + this.getTicketsSold();
+         return "Event " + this.getName() + System.lineSeparator() + "Capacity: " + this.getCapacity() + System.lineSeparator() + "Tickets Sold: " + this.getTicketsSold();
     }
 }

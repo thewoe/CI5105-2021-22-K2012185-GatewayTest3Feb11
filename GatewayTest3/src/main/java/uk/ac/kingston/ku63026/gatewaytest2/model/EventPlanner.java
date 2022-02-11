@@ -118,8 +118,10 @@ public int totalTicketsSold(){
      StringBuilder allEvents = new StringBuilder();
      for (Event e: events){
        allEvents.append(e.printEvent());
-       allEvents.append(System.lineSeparator());   
+       allEvents.append(System.lineSeparator());  
+       allEvents.append(System.lineSeparator());
      }
+     allEvents.append("Total Tickets Sold: " + this.totalTicketsSold());
      return allEvents.toString(); 
     }
 
