@@ -137,6 +137,14 @@ public int totalTicketsSold(){
      return allEvents.toString(); 
     }
     
+    public void getTheEvent(String selectedText) {
+        for (int i=0; i<this.events.size(); i++) {
+            if (this.events.get(i).getName().equals(selectedText)) {
+                this.events.get(i).printEvent();
+            }
+        }
+    }
+    
     public int getSelectedEvent(String selectedText) {
         String searchableText = selectedText.trim();
         int index = 0;
@@ -149,6 +157,12 @@ public int totalTicketsSold(){
         }
         return index;
     }
+    
+    public void deleteEvent(String selectedEvent) {
+        int indexToRemove = this.getSelectedEvent(selectedEvent);
+        this.events.remove(indexToRemove);
+    }
+    
 
   
 }
