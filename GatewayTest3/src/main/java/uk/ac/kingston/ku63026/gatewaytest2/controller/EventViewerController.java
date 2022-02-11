@@ -7,6 +7,7 @@ package uk.ac.kingston.ku63026.gatewaytest2.controller;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import uk.ac.kingston.ku63026.gatewaytest2.view.EventViewer;
 
 /**
  *
@@ -15,10 +16,12 @@ import java.awt.event.ActionListener;
 public class EventViewerController implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent ae) {
+        EventViewer ev = EventViewer.getInstance();
         switch (ae.getActionCommand()) {
             case "DeleteEvent":
                 System.out.println("Delete Selected button clicked");
                 System.out.println(ae.getActionCommand());
+                System.out.println(ev.getTextAreaPanel().getTextAreaPanel().getSelectedText());
                 break;
         }
     }
