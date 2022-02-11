@@ -13,6 +13,14 @@ import javax.swing.JFrame;
  * @author tugso
  */
 public class EventViewer extends JFrame {
+
+    public TextAreaPanel getTextAreaPanel() {
+        return textAreaPanel;
+    }
+
+    public void setTextAreaPanel(TextAreaPanel textAreaPanel) {
+        this.textAreaPanel = textAreaPanel;
+    }
     
     private TextAreaPanel textAreaPanel = new TextAreaPanel();
     
