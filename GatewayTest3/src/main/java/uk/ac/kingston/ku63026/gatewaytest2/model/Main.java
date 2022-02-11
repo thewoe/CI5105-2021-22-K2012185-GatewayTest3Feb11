@@ -2,6 +2,7 @@ package uk.ac.kingston.ku63026.gatewaytest2.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import uk.ac.kingston.ku63026.gatewaytest2.view.EventViewer;
 
 public class Main{
     // This class is for testing your code before submitting
@@ -14,6 +15,7 @@ public class Main{
         EventPlanner ep = new EventPlanner();
         ep.readEvents("Events.csv");
         System.out.println(ep.printEvents());
+        EventViewer ev = new EventViewer();
         
         //System.out.println("Total Tickets Sold: " + ep.totalTicketsSold());
         
