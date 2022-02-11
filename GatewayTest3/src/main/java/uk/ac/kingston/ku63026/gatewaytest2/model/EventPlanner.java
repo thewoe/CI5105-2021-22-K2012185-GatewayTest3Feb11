@@ -15,6 +15,18 @@ import java.util.Scanner;
  * @author 
  */
 public class EventPlanner {
+    
+    private static EventPlanner INSTANCE = new EventPlanner();
+    
+    public static EventPlanner getInstance() {
+        if (INSTANCE==null) {
+            INSTANCE = new EventPlanner();
+            //System.out.println("New EventManager instance created");
+        }
+        //System.out.println("Using the first EventManager instance created");
+        return INSTANCE;
+    }
+    
 
     // GWT2Q1 List relationship with Event and Getters and Setters
     // Attribute defines a null List
@@ -123,6 +135,19 @@ public int totalTicketsSold(){
      }
      allEvents.append("Total Tickets Sold: " + this.totalTicketsSold());
      return allEvents.toString(); 
+    }
+    
+    public int getSelectedEvent(String selectedText) {
+        String searchableText = selectedText.trim();
+        int index = 0;
+        System.out.println(this.events.size());
+        for (int i=0; i<this.getEvents().size(); i++) {
+            if (searchableText.equals(this.events.get(i).getName())) {
+               index = i;
+               break;
+            }
+        }
+        return index;
     }
 
   

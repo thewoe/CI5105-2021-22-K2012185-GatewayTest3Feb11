@@ -16,6 +16,7 @@ public class Main{
         ep.readEvents("Events.csv");
         System.out.println(ep.printEvents());
         EventViewer ev = EventViewer.getInstance();
+        System.out.println(ep.getEvents().toString());
         ev.getTextAreaPanel().getTextAreaPanel().setText(ep.printEvents());
         
         //System.out.println("Total Tickets Sold: " + ep.totalTicketsSold());
